@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-google: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--fonte-google);
+}
+
+/*Utility Classes*/
+.btn-primary {
+    background: #1db954;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.btn-primary:hover{
+    background-color: #1ed760;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+/*Navbar*/
+#navbar {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-container {
+    width: 60%;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+#navbar .navbar-container .logo {
+    height: 40px;
+    width: auto;
+}
+
+.navbar-container ul {
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+}
+
+.navbar-container ul li {
+    padding: 0px 20px;
+}
+
+.navbar-container ul li:hover {
+    color: #1db954;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.navbar-container ul li:nth-child(3) {
+    border-right: 1px solid white;
+}
+
+/*Showcase*/
+
+#showcase {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url(imagens/showcase.webp);
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: color;
+}
+
+#showcase .showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#showcase .showcase-container h2 {
+    font-size: 5em;
+}
+
+#showcase .showcase-container p {
+    margin: 15px 0px;
+    font-size: 1.1em;
+}
+
+/* Footer */
+
+#footer {
+    background-color: black;
+    color: white;
+    padding: 80px 0px;
+}
+
+#footer .footer-content {
+    display: flex;
+    margin: auto;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.footer-menu {
+    margin: 0px 40px;
+    list-style: none;
+}
+
+.footer-menu .footer-menu-item {
+    margin: 25px 0px;
+}
+
+.footer-menu-item:hover{
+    color: #1ed760;
+    cursor: pointer;
+    transition: 0.3em;
+}
+
+.footer-menu p {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #919496;
+    font-size: 0.8em;
+}
+
+
+/* Footer Socials */
+.socials {
+    display: flex;
+
+}
+
+.socials i {
+    margin: 0px 20px;
+    font-size: 1.7em;
+}
+
+.socials i:hover{
+    color: #1ed760;
+    cursor: pointer;
+    transition: 00.3em;
+}
+
+/* Footer Info */
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 60%;
+    margin: auto;
+    font-weight: bold;
+    color: #919496;
+    font-size: 0.75em;
+    padding-top: 50px;
+}
+
+.footer-info .footer-info-items {
+    display: flex;
+    list-style: none;
+}
+
+.footer-info .footer-info-items .footer-info-item {
+    margin: 0px 10px;
+    font-weight: bold;
+    color: #919496;
+    font-size: 0.75em;
+}
+
+.footer-info .rights {}
+
+.country {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.brazil-flag {
+    height: 20px;
+    width: auto;
+    display: inline-block;
+    margin-left: 10px;
+}
